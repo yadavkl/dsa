@@ -7,7 +7,7 @@ func LongestSubarraySum(arr []int, sum int) int {
 	for idx, val := range arr {
 		presum = presum + val
 		if presum == sum {
-			return idx + 1
+			maxlen = idx + 1
 		}
 		if _, ok := presummap[presum]; !ok {
 			presummap[presum] = idx
