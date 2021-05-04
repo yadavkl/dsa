@@ -17,19 +17,19 @@ func GetMedian(a1 []int, a2 []int) float64 {
 	for l <= r {
 		i1 := (l + r) / 2
 		i2 := (n1+n2+1)/2 - i1
-		min1 := math.MinInt32
+		min1 := math.MaxInt32
 		if i1 < n1 {
 			min1 = a1[i1]
 		}
-		max1 := math.MaxInt32
+		max1 := math.MinInt32
 		if i1 > 0 {
 			max1 = a1[i1-1]
 		}
-		min2 := math.MinInt32
+		min2 := math.MaxInt32
 		if i2 < n2 {
 			min2 = a2[i2]
 		}
-		max2 := math.MaxInt32
+		max2 := math.MinInt32
 		if i2 > 0 {
 			max2 = a2[i2-1]
 		}

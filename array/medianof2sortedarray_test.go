@@ -21,6 +21,11 @@ func TestMedianOfSortedArray(t *testing.T) {
 			[]int{5, 15, 25, 35, 45},
 			22.5,
 		},
+		{
+			[]int{30,40,50,40},
+			[]int{5,7,8,9,20},
+			20,
+		},
 	}
 	for idx, test := range tests {
 		t.Run(fmt.Sprintf("Test-Case-%v", idx), func(t *testing.T) {
